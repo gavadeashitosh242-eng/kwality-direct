@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.env
+kwality.db
+instance/
+.venv/
+venv/

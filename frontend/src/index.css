@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  /* Signature palette: "route map at dusk" — deep indigo-slate control-tower
+     background, warm harvest-amber accent (poultry/grain, not the generic
+     terracotta), and a clear go/stop status pair for availability states. */
+  --color-ink: #12172b;         /* near-black indigo, sidebar/header */
+  --color-ink-soft: #1c2340;    /* card/panel surface on dark */
+  --color-slate: #4a5170;       /* muted secondary text on dark */
+  --color-canvas: #f6f5f1;      /* warm off-white page background */
+  --color-panel: #ffffff;       /* card surface on light */
+  --color-line: #e4e1d8;        /* hairline borders on light */
+  --color-amber: #e2a13a;       /* primary accent — harvest amber */
+  --color-amber-deep: #b97e22;
+  --color-route: #3d7a68;       /* route/teal-green — "on the move" */
+  --color-go: #3f8f5f;          /* available / success */
+  --color-stop: #c15a4a;        /* emergency / error */
+  --color-wait: #c99a3a;        /* pending / warning */
+
+  --font-display: "Space Grotesk", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    background: var(--color-canvas);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+  }
+}
