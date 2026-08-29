@@ -20,6 +20,7 @@ api.interceptors.response.use(
     if (error.response && error.response.status === 401) {
       localStorage.removeItem("kwality_token");
       localStorage.removeItem("kwality_user");
+      localStorage.removeItem("kwality_profile");
 
       if (window.location.pathname !== "/login") {
         window.location.href = "/login";
