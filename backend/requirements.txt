@@ -5,3 +5,4 @@ Flask-Cors==4.0.1
 Flask-Migrate==4.0.7
 python-dotenv==1.0.1
 Werkzeug==3.0.3
+gunicorn
